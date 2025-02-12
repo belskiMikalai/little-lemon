@@ -1,4 +1,4 @@
-import logo from './assets/littleLemonLogo.png'
+import logo from '/littleLemonLogo.png'
 import NavBar from './NavBar'
 export default function Header() {
   return (
