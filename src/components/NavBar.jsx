@@ -1,8 +1,9 @@
+import './NavBar.css'
 
 export default function NavBar() {
   return (
-    <nav>
-         <ul>
+    <nav className='nav-cont'>
+         <ul className="nav-bar">
              <li>
                  <a href='#'>HOME</a>
              </li>

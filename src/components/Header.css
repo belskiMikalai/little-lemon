@@ -1,0 +1,15 @@
+header {
+    height: 99px;
+    width: 100%;
+
+}
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.logo {
+    width: 200px;
+    height: 55px;
+}
+
