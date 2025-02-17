@@ -1,0 +1,9 @@
+
+.section-container {
+    display: flex;
+    justify-content: center;
+}
+
+.section-container > div {
+    width: 860px;
+}

@@ -1,8 +1,8 @@
 import './NavBar.css'
 
-export default function NavBar() {
+export default function NavBar({styles}) {
   return (
-    <nav className='nav-cont'>
+    <nav className='nav-cont' style={styles}>
          <ul className="nav-bar">
              <li>
                  <a href='#'>HOME</a>

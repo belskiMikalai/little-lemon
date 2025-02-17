@@ -1,9 +1,4 @@
 
-nav {
-    width: 580px;
-    margin-left: 80px;
-}
-
 .nav-bar {
     height: 100%;
     margin: 0;
@@ -17,7 +12,6 @@ nav {
     font-size: 16px;
     text-transform: uppercase;
     list-style: none;
-    background: wheat;
 }
 
 
