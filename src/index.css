@@ -1,3 +1,49 @@
+@font-face {
+    font-family: "MarkaziText Medium";
+
+    src:
+        local("MarkaziText-Medium"),
+        local("MarkaziText Medium"),
+        url('./assets/fonts/MarkaziText-Medium.ttf');
+
+}
+@font-face {
+    font-family: "MarkaziText Regular";
+    src:
+        local("MarkaziText-Regular"),
+        local("MarkaziText Regular"),
+        url('./assets/fonts/MarkaziText-Regular.ttf');
+}
+@font-face {
+    font-family: "Karla Regular";
+    src:
+        local("Karla-Regular"),
+        local("Karla Regular"),
+        url('./assets/fonts/Karla-Regular.ttf');
+}
+@font-face {
+    font-family: "Karla Medium";
+    src:
+        local("Karla-Medium"),
+        local("Karla Medium"),
+        url('./assets/fonts/Karla-Medium.ttf');
+}
+@font-face {
+    font-family: "Karla Bold";
+    src:
+        local("Karla-Bold"),
+        local("Karla Bold"),
+        url('./assets/fonts/Karla-Bold.ttf');
+}
+@font-face {
+    font-family: "Karla ExtraBold";
+    src:
+        local("Karla-ExtraBold"),
+        local("Karla ExtraBold"),
+        url('./assets/fonts/Karla-ExtraBold.ttf');
+}
+
+
 :root {
     --primary-color1: #495E57;
     --primary-color2: #F4CE15;
@@ -7,4 +53,49 @@
 
 body {
     margin: 0
+}
+.title {
+    font-family: "MarkaziText Medium";
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 0.7;
+    margin: 0;
+}
+.sub-title {
+    font-family: "MarkaziText Regular";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 0.8;
+    margin: 0;
+}
+.lead {
+    font-family: "Karla Medium";
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+.bold {
+    font-family: "Karla ExtraBold";
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0;
+}
+.card-title {
+    font-family: "Karla Bold";
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+.card-text  {
+    font-family: "Karla Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+.highlight  {
+    font-family: "Karla Medium";
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
 }

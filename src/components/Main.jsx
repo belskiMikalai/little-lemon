@@ -4,8 +4,13 @@ export default function Main() {
   return (
     <main>
       <Section backgroundcolor="var(--primary-color1)" className='hero'>
-        <h1>Little Lemon</h1>
-        <h2>Chikago</h2>
+        <h1 className='title'>Little Lemon</h1>
+        <h2 className='sub-title'>Chikago</h2>
+        <p className='lead'> LEad text!</p>
+        <p className='bold'>Order now!</p>
+        <h3 className='card-title'>Card title</h3>
+        <p className='card-text'>Card text</p>
+        <p className='highlight'> Highlight</p>
       </Section>
       <Section className='order'>
         <h1>Specials</h1>
