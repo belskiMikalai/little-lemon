@@ -1,19 +1,30 @@
 import './Main.css'
 import Section from './secondary/Section'
+import Button from './secondary/Buttton'
+import { heroImg } from '../main'
 export default function Main() {
   return (
     <main>
       <Section backgroundcolor="var(--primary-color1)" className='hero'>
-        <h1 className='title'>Little Lemon</h1>
-        <h2 className='sub-title'>Chikago</h2>
-        <p className='lead'> LEad text!</p>
-        <p className='bold'>Order now!</p>
-        <h3 className='card-title'>Card title</h3>
-        <p className='card-text'>Card text</p>
-        <p className='highlight'> Highlight</p>
+        <div>
+          <h1 className='title'>Little Lemon</h1>
+          <h2 className='sub-title'>Chikago</h2>
+        </div>
+        <p className='lead'> We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+        <div>
+          <button>Reserve a tab</button>
+        </div>
+        <div className='image-container'>
+          {
+            heroImg.map(({id, img, alt}) => {return <img src={img} alt={alt} key={id} />})
+          }
+        </div>
       </Section>
       <Section className='order'>
-        <h1>Specials</h1>
+        <div>
+          <h1>Specials</h1>
+        </div>
+        <Button type="primary">Order now!</Button>
       </Section>
       <Section className='reviews'>
         <h1>Testimonials</h1>

@@ -1,5 +1,5 @@
-import logo from '/littleLemonLogo.png'
 import NavBar from './secondary/NavBar'
+import {logo} from '../main.jsx';
 import './Header.css'
 export default function Header() {
   return (

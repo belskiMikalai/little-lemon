@@ -4,6 +4,36 @@ main {
 }
 .hero {
     height: 477px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 100px;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: start;
+}
+.hero .title {
+    color: var(--primary-color2);
+}
+.hero .sub-title {
+    color: white;
+}
+.hero .lead {
+    color: var(--highlight1)
+}
+.hero .image-container {
+    grid-row: span 3;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap row;
+}
+.hero .image-container img{
+    margin: 6px;
+}
+.hero .image-container img:nth-child(-n + 3) {
+    align-self: flex-end;
+}
+.hero .image-container img:nth-last-child(-n + 3) {
+    align-self: flex-start;
 }
 .order {
     height: 600px;
