@@ -1,7 +1,7 @@
-
+import './Card.css';
 export default function Card(props) {
     return (
-        <article>
+        <article className='card'>
             <div>
                 <img />
             </div>
@@ -19,4 +19,4 @@ export default function Card(props) {
             </div>
         </article>
     );
-}
+};

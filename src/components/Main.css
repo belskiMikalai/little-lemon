@@ -36,11 +36,72 @@ main {
     align-self: flex-start;
 }
 .order {
-    height: 600px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+.order .order-header {
+    height: 151px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order .card-container > * {
+    border-radius: 8px;
 }
 .reviews {
-    height: 600px;
+    height: 550px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
+.reviews h1 {
+    margin-bottom: 50px;
+}
+.reviews .comments {
+    background: linear-gradient(
+        to bottom,
+        var(--highlight1) 50%,
+        white 50%
+      );
+    border-radius: 16px;
+}
+
 .about-us {
-    height: 620px;
+    height: 744px;
 }
+.about-us .about-header {
+    height: 194px;
+    display: flex;
+    align-items: center;
+}
+.about-us .about-header img{
+    margin-right: 35px;
+}
+.about-us .about-header h1 {
+    color: var(--primary-color2);
+}
+.about-us .about-header h2 {
+    color: white;
+}
+.about-us .about-container {
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    align-items: center;
+    margin-top: 25px;
+}
+.about-us .about-container p {
+    grid-column: span 2;
+    text-align: justify;
+    padding: 20px;
+}
+
+
