@@ -27,7 +27,7 @@ export default function NavBar({aStyle, navStyle}) {
     <nav style={navStyle}>
          <ul className="nav-bar bold">
             {
-                links.map(({label, href, id}) => {
+                links.map(({label, href}, id) => {
                     return (
                         <li key={id}>
                             <a style={aStyle} href={href}>{label}</a>

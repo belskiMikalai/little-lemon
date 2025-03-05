@@ -5,10 +5,19 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
     width: 200px;
     height: 55px;
+    margin: 0 40px;
 }
-
+@media only screen and (max-width: 600px) {
+    header {
+        flex-wrap: nowrap;
+    }
+    .nav-bar {
+        display: none;
+    }
+}

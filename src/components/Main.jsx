@@ -1,32 +1,12 @@
 import './Main.css';
-import Section from './secondary/Section';
-import Button from './secondary/Buttton';
-import Card from './secondary/Card';
-import Comment from './secondary/Comment';
-import { heroImg, reviewImg, logoStyled, about, about2} from '../main';
+import Section from './secondary/Section.jsx';
+import Button from './secondary/Buttton.jsx';
+import Card from './secondary/Card.jsx';
+import Comment from './secondary/Comment.jsx';
+import { heroImg, logoStyled, reviews, about, about2} from '../data.jsx';
 
 export default function Main() {
-  const aboutColor = 'linear-gradient(to bottom, var(--primary-color1) 26%, white 26%)'
-  const reviews = [
-    {
-      id: 0,
-      userName: 'Ishaq Hubbard',
-      text: 'Paragraph text regular 16pt 1.5 line height Max 65 characters per line...',
-      score: 5,
-    },
-    {
-      id: 1,
-      userName: 'Hector Mcpherson',
-      text: 'Paragraph text regular 16pt 1.5 line height Max 65 characters per line...',
-      score: 4,
-    },
-    {
-      id: 2,
-      userName: 'Madeleine Hammond',
-      text: 'Paragraph text regular 16pt 1.5 line height Max 65 characters per line...',
-      score: 5,
-    }
-  ]
+  const aboutColor = 'linear-gradient(to bottom, var(--primary-color1) 26%, white 26%)';
   return (
     <main>
       <Section backgroundcolor="var(--primary-color1)" className='hero'>
@@ -58,9 +38,9 @@ export default function Main() {
       <Section className='reviews'>
         <h1 className='title'>Testimonials</h1>
         <div className='comments'>
-          {reviews.map(({id, userName, text, score}) => {
+          {reviews.map(({id, userName, src, text, score}) => {
             return (
-              <Comment key={id} userName={userName} reviewScore={score} userImg={reviewImg[id]}>{text}</Comment>
+              <Comment key={id} userName={userName} reviewScore={score} userImg={src}>{text}</Comment>
             );
           })}
         </div>

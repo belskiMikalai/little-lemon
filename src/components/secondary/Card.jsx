@@ -1,5 +1,5 @@
 import './Card.css';
-export default function Card(props) {
+export default function Card(children, props) {
     return (
         <article className='card'>
             <div>
@@ -7,14 +7,14 @@ export default function Card(props) {
             </div>
             <div>
                 <div>
-                    <h1>{props.name}</h1>
-                    <p>{props.price}</p>
+                    <h1 className='card-title'>{props.name}</h1>
+                    <p className='highlight'>{props.price}</p>
                 </div>
                 <div>
-                    <p>{props.description}</p>
+                    <p className='card-text'>{ children }</p>
                 </div>
                 <div>
-                    <a>Order a delivery</a>
+                    <a href='#' className='bold'>{ children }</a>
                 </div>
             </div>
         </article>

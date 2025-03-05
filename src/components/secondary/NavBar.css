@@ -2,7 +2,7 @@
 .nav-bar {
     height: 100%;
     margin: 0;
-    padding: 0px;
+    padding: 0 40px;
 
     display: flex;
     flex-flow: row nowrap;
@@ -14,7 +14,9 @@
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
+    white-space: nowrap;
     color: black;
+    margin: 0 5px;
 }
 
 
