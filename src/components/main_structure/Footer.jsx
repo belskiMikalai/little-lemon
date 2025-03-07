@@ -1,7 +1,7 @@
-import NavBar from "./secondary/NavBar.jsx"
+import NavBar from "../navigation/NavBar.jsx"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faTwitter, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { logoStyled2 } from "../data.jsx";
+import { logoStyled2 } from "../../data.jsx";
 import './Footer.css'
 export default function Footer() {
   return (

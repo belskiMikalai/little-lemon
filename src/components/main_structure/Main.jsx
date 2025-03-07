@@ -1,9 +1,9 @@
 import './Main.css';
-import Section from './secondary/Section.jsx';
-import Button from './secondary/Buttton.jsx';
-import Card from './secondary/Card.jsx';
-import Comment from './secondary/Comment.jsx';
-import { heroImg, logoStyled, reviews, about, about2} from '../data.jsx';
+import Section from '../secondary/Section.jsx';
+import Button from '../functional_elem/Button.jsx';
+import Card from '../secondary/Card.jsx';
+import Comment from '../secondary/Comment.jsx';
+import { heroImg, logoStyled, reviews, about, about2} from '../../data.jsx';
 
 export default function Main() {
   const aboutColor = 'linear-gradient(to bottom, var(--primary-color1) 26%, white 26%)';
