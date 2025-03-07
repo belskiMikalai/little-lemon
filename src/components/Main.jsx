@@ -30,9 +30,15 @@ export default function Main() {
           <Button type="primary">Order now!</Button>
         </div>
         <div className='card-container'>
-          <Card />
-          <Card />
-          <Card />
+          <Card price="30$" cardName="Cake" buy="Buy 30$">
+            Text
+          </Card>
+          <Card price="30$" cardName="Cake" buy="Buy 30$">
+            Text
+          </Card>
+          <Card price="30$" cardName="Cake" buy="Buy 30$">
+            Text
+          </Card>
         </div>
       </Section>
       <Section className='reviews'>
@@ -62,7 +68,6 @@ export default function Main() {
           </p>
           <img className='firstImg' src={about2} alt='Little lemon owner'/>
           <img className='secondImg' src={about} alt='Little lemon restuarant'/>
-
           <p className='card-text secondParagraph'>
             <span className='highlight' >Aliquam tristique eros quis feugiat pretium.</span> <br/><br/>
              Aliquam consequat ligula nec quam egestas, id finibus risus lacinia. Duis gravida porttitor nisi, eu eleifend mauris pulvinar et.

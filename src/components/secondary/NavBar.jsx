@@ -1,28 +1,7 @@
 import './NavBar.css'
-
+import { links } from '../../data.jsx';
 export default function NavBar({aStyle, navStyle}) {
-    const links = [
-        {
-            label: 'Home',
-            href: '#',
-        },
-        {
-            label: 'About',
-            href: '#',
-        },
-        {
-            label: 'Menu',
-            href: '#',
-        },
-        {
-            label: 'Reservation',
-            href: '#',
-        },
-        {
-            label: 'Order Online',
-            href: '#',
-        },
-    ]
+
   return (
     <nav style={navStyle}>
          <ul className="nav-bar bold">

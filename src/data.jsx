@@ -17,6 +17,28 @@ import card1 from './assets/img/card1.png'
 import card2 from './assets/img/card2.png'
 import card3 from './assets/img/card3.png'
 
+const links = [
+  {
+      label: 'Home',
+      href: '#',
+  },
+  {
+      label: 'About',
+      href: '#',
+  },
+  {
+      label: 'Menu',
+      href: '#',
+  },
+  {
+      label: 'Reservation',
+      href: '#',
+  },
+  {
+      label: 'Order Online',
+      href: '#',
+  },
+];
 const heroImg = [
     {
       id: 0,
@@ -50,29 +72,29 @@ const heroImg = [
     }
   ];
 
-    const reviews = [
-      {
-        id: 0,
-        userName: 'Ishaq Hubbard',
-        src: review1,
-        text: 'Paragraph text regular 16pt 1.5 line height Max 65 characters per line...',
-        score: 5,
-      },
-      {
-        id: 1,
-        userName: 'Hector Mcpherson',
-        src: review2,
-        text: 'Paragraph text regular 16pt 1.5 line height Max 65 characters per line...',
-        score: 4,
-      },
-      {
-        id: 2,
-        userName: 'Madeleine Hammond',
-        src: review3,
-        text: 'Paragraph text regular 16pt 1.5 line height Max 65 characters per line...',
-        score: 5,
-      }
-    ]
+  const reviews = [
+    {
+      id: 0,
+      userName: 'Ishaq Hubbard',
+      src: review1,
+      text: 'Paragraph text regular 16pt 1.5 line height Max 65 characters per line...',
+      score: 5,
+    },
+    {
+      id: 1,
+      userName: 'Hector Mcpherson',
+      src: review2,
+      text: 'Paragraph text regular 16pt 1.5 line height Max 65 characters per line...',
+      score: 4,
+    },
+    {
+      id: 2,
+      userName: 'Madeleine Hammond',
+      src: review3,
+      text: 'Paragraph text regular 16pt 1.5 line height Max 65 characters per line...',
+      score: 5,
+    }
+  ];
   const cardImg = [
     {
       src: card1,
@@ -93,6 +115,7 @@ const heroImg = [
     logoStyled2,
     about,
     about2,
+    links,
     heroImg,
     reviews,
     cardImg,
