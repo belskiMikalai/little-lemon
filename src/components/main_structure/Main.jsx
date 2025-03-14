@@ -10,7 +10,7 @@ export default function Main() {
   return (
     <main>
       <Section backgroundcolor="var(--primary-color1)" className='hero'>
-        <div>
+        <div className='title-container'>
           <h1 className='title'>Little Lemon</h1>
           <h2 className='sub-title'>Chikago</h2>
         </div>
@@ -46,7 +46,7 @@ export default function Main() {
         <div className='comments'>
           {reviews.map(({id, userName, src, text, score}) => {
             return (
-              <Comment key={id} userName={userName} reviewScore={score} userImg={src}>{text}</Comment>
+              <Comment key={id} userName={userName} reviewScore={score} userImg={src} index={id}>{text}</Comment>
             );
           })}
         </div>
@@ -66,8 +66,8 @@ export default function Main() {
              Suspendisse metus erat, volutpat lacinia tincidunt eget, gravida vitae turpis. Cras convallis ex et convallis aliquam.
              Nunc id leo sagittis, condimentum magna a, eleifend magna.
           </p>
-          <img className='firstImg' src={about2} alt='Little lemon owner'/>
-          <img className='secondImg' src={about} alt='Little lemon restuarant'/>
+          <img  src={about2} alt='Little lemon owner'/>
+          <img  src={about} alt='Little lemon restuarant'/>
           <p className='card-text secondParagraph'>
             <span className='highlight' >Aliquam tristique eros quis feugiat pretium.</span> <br/><br/>
              Aliquam consequat ligula nec quam egestas, id finibus risus lacinia. Duis gravida porttitor nisi, eu eleifend mauris pulvinar et.

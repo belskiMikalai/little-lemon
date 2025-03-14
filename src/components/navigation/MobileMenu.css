@@ -1,19 +1,48 @@
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     .mobile-menu {
         display: none;
     }
 }
-.menu-button {
-    margin: 0 40px;
+.mobile-menu > button {
+    padding: 0;
+    margin: 0 0 0 40px;
+    z-index: 5;
 }
 .menu-sidebar {
     position: fixed;
-    top: 0px;
-    right: 0px;
+    z-index: 4;
+    top: 99px;
+    left: 0px;
     width: 40%;
     height: 100%;
     background-color: var(--highlight1);
+    border-top: 1px solid var(--primary-color1);
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    animation: .3s ease-in sidebar-slide;
 }
+
+.menu-sidebar .nav-bar {
+    padding: 0;
+    margin-top: 50px;
+
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.menu-sidebar li {
+    margin-bottom: 50px;
+}
+@keyframes sidebar-slide {
+    from {
+        left: -400px;
+    }
+    to {
+        left: 0px;
+    }
+  }

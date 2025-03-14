@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer>
       <div>
-        <NavBar className='navbar' navStyle={{margin: "42px 0 112px 0"}} aStyle={{color: "white"}}/>
+        <NavBar/>
         <div className="info-container">
           <div className="contacts">
             <h3 className="card-title">

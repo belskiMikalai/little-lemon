@@ -11,14 +11,14 @@ footer .card-text {
     text-align: justify;
 }
 footer a {
-    color: white;
+    color: white !important;
     text-decoration: none;
 }
 footer > div {
     width: 860px;
 }
-.navbar {
-    margin: 0 42px;
+footer nav {
+    margin: 42px 0 112px;
 }
 .info-container {
     display: grid;

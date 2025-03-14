@@ -1,5 +1,5 @@
 import './Button.css'
-export default function Button({children, type}) {
+export default function Button({children, type, onClick}) {
     let style;
     switch(type) {
         case "primary":
@@ -7,10 +7,11 @@ export default function Button({children, type}) {
                 backgroundColor: "var(--primary-color2)",
                 height: "35px",
                 width: "200px"
-            }
+            };
+            break;
     }
     return (
-        <button className="bold" style={style}>
+        <button className={`bold ${type}`} style={style} onClick={onClick}>
             {children}
         </button>
     );

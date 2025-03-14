@@ -1,18 +1,28 @@
 
 import './MobileMenu.css'
+import { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import Button from '../functional_elem/Button';
+import NavBar from './NavBar';
 
-const MobileMenu = ({children}) => {
+const MobileMenu = () => {
+    const [ isMenuOpen, setMenuOpen] = useState(false);
+    const handleMenuOpen = () => {
+        setMenuOpen(!isMenuOpen);
+    }
     return (
         <div className='mobile-menu'>
-            <div className='menu-sidebar'>
-                { children }
-                bfd xvcfd
-            </div>
-            <a href="#" className="menu-button">
-                <FontAwesomeIcon icon={faBars} size='2xl'/>
-            </a>
+            {
+                isMenuOpen ? (
+                    <div className='menu-sidebar'>
+                        <NavBar />
+                    </div>
+                ) : null
+            }
+            <Button type="close-menu">
+                <FontAwesomeIcon onClick={handleMenuOpen} icon={isMenuOpen ? faXmark : faBars} size='2xl'/>
+            </Button>
         </div>
     );
 };

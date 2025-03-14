@@ -4,10 +4,10 @@ import { faStar as SolidStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as EmtyStar } from "@fortawesome/free-regular-svg-icons";
 
 
-export default function Comment({children, userImg, userName, reviewScore}) {
+export default function Comment({children, userImg, userName, reviewScore, index}) {
 
     // Card stack effect background
-    const bgColor = userImg.id % 2 == 1 ? "white" : "var(--highlight1)";
+    const bgColor = index % 2 == 1 ? "white" : "var(--highlight1)";
 
     const maxRating = 5;
     const starList = [];

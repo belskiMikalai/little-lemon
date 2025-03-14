@@ -3,3 +3,10 @@ button {
     border-radius: 16px;
     border-width: 0;
 }
+.close-menu {
+    height: 50px;
+    width: 50px;
+}
+.close-menu:hover {
+    background-color: var(--highlight1),
+}
