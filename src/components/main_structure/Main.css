@@ -3,7 +3,7 @@ main {
     width: 100%;
 }
 .hero {
-    height: 477px;
+    min-height: 477px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 100px;
@@ -27,19 +27,33 @@ main {
 .hero .image-container img:nth-child(2) {
     display: block !important;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 601px) {
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 100px;
+    }
     .hero .title-container {
         grid-column: span 2 ;
+        padding: 40px 0;
+    }
+    .hero .lead {
+        margin-right: 10%;
     }
     .hero .image-container {
-        grid-row: span 2 ;
-        justify-self: center;
+        justify-self: stretch;
+        align-self: stretch;
+        padding: 5px;
     }
     .hero .image-container img{
+        height: 100%;
         width: 100%;
+        object-fit: contain;
+    }
+    .hero .reserve {
+        grid-column: span 2;
     }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     .hero .image-container {
         grid-row: span 3;
         display: flex;
@@ -57,30 +71,28 @@ main {
     .hero .image-container img:nth-last-child(-n + 3) {
         align-self: flex-start;
     }
-    @media only screen and (max-width: 852px) {
+    @media only screen and (max-width: 867px) {
         .hero .image-container img:nth-last-child(1) {
             display: none;
         }
     }
-    @media only screen and (max-width: 742px) {
+    @media only screen and (max-width: 790px) {
         .hero .image-container img:nth-child(1) {
             display: none;
         }
     }
-    @media only screen and (max-width: 719px) {
+    @media only screen and (max-width: 777px) {
         .hero .image-container img:nth-child(4) {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 670px) {
+        .hero .image-container img:nth-child(3) {
             display: none;
         }
     }
 
 }
-@media only screen and (max-width: 852px) {
-    .order .card-container {
-        justify-content: center !important;
-        flex-flow: column !important;
-    }
-}
-
 .order {
     min-height: 550px;
     display: flex;
@@ -92,23 +104,40 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .order .card-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.order .card-container > * {
-    border-radius: 8px;
+.order .card {
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 670px) {
+    .order .order-header {
+        margin-top: 20px;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+
+    .order .order-header > h1{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .order .card-container {
+        justify-content: center !important;
+        flex-flow: column !important;
+    }
 }
 .reviews {
-    height: 550px;
     display: flex;
     flex-flow: column;
     justify-content: center;
 }
 .reviews h1 {
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 .reviews .comments {
     background: linear-gradient(
@@ -117,15 +146,21 @@ main {
         white 50%
       );
     border-radius: 16px;
-}
-
-.about-us {
-    height: 744px;
+    margin-bottom: 50px;
 }
 .about-us .about-header {
     height: 194px;
     display: flex;
     align-items: center;
+}
+.about-us .about-header::after {
+    content: " ";
+    background-color: var(--primary-color1);
+    height: 194px;
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    z-index: -1;
 }
 .about-us .about-header img{
     margin-right: 35px;
@@ -142,6 +177,10 @@ main {
         justify-content: center;
         flex-flow: column nowrap;
     }
+    .about-us .about-container img {
+        object-fit: cover;
+        max-width: 100%;
+    }
     .about-us .about-container img:nth-child(2){
         order: -1;
     }
@@ -156,11 +195,13 @@ main {
     grid-auto-flow: row;
     align-items: center;
     margin-top: 25px;
+    margin-bottom: 50px;
 }
 .about-us .about-container p {
     grid-column: span 2;
     text-align: justify;
     padding: 20px;
 }
+
 
 

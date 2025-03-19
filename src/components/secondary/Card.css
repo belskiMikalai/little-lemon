@@ -3,4 +3,42 @@
     width: 269px;
     height: 409px;
     background-color: var(--highlight1);
+    border-radius: 16px;
+}
+.card img {
+    height: 269px;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    object-fit:  cover;
+}
+.card-main {
+    height: 118px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 11px;
+}
+.card-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.order-button {
+    align-self: flex-end;
+    width: 100%;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+.order-button span {
+    margin-right: 5px;
+}
+.order-button:hover {
+    text-decoration: underline 2.5px black;
+}
+@media only screen and (max-width: 860px) {
+    .card {
+        width: 100%;
+    }
 }

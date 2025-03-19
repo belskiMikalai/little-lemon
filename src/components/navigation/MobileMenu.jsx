@@ -20,7 +20,7 @@ const MobileMenu = () => {
                     </div>
                 ) : null
             }
-            <Button type="close-menu">
+            <Button type="navigation">
                 <FontAwesomeIcon onClick={handleMenuOpen} icon={isMenuOpen ? faXmark : faBars} size='2xl'/>
             </Button>
         </div>

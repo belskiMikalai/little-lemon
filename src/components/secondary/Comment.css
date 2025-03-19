@@ -8,6 +8,8 @@
     align-items: center;
     justify-items: start;
     border-radius: 16px;
+    overflow: hidden;
+
 }
 .comment-container img {
     justify-self: center;
@@ -15,4 +17,20 @@
 .stars-container > *{
     color: var(--primary-color2);
     margin-right: 5.5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .comment-container {
+        height: 200px;
+        grid-template-rows: 100px auto;
+    }
+    .card-info {
+        padding: 15px;
+        grid-row: 2;
+        grid-column: span 3;
+    }
+    .stars-container {
+        grid-column: 3 / 4;
+        justify-self: center;
+    }
 }

@@ -1,6 +1,6 @@
 
 footer {
-    height: 498px;
+    min-height: 498px;
     display: flex;
     justify-content: center;
     background-color: var(--primary-color1);
@@ -14,8 +14,15 @@ footer a {
     color: white !important;
     text-decoration: none;
 }
+footer nav a:hover {
+    text-decoration: underline white 2.5px !important;
+}
+footer a:hover {
+    text-decoration: underline white 2px;
+}
 footer > div {
-    width: 860px;
+    width: 840px;
+    margin: 0 20px;
 }
 footer nav {
     margin: 42px 0 112px;
@@ -29,6 +36,26 @@ footer nav {
     align-items: stretch;
     column-gap: 130px;
     row-gap: 65px;
+}
+@media only screen and (max-width: 860px) {
+    .info-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+    .info-container > * {
+        width: 70%;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .info-container > * {
+        width: 100%;
+    }
+    .logo-text > *{
+        font-size: 40px !important;
+    }
 }
 .contacts {
     grid-row: span 2;

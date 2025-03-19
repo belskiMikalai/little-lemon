@@ -1,17 +1,7 @@
 import './Button.css'
-export default function Button({children, type, onClick}) {
-    let style;
-    switch(type) {
-        case "primary":
-            style = {
-                backgroundColor: "var(--primary-color2)",
-                height: "35px",
-                width: "200px"
-            };
-            break;
-    }
+export default function Button({children, type, className, onClick}) {
     return (
-        <button className={`bold ${type}`} style={style} onClick={onClick}>
+        <button className={`bold ${type} ${className}`} onClick={onClick}>
             {children}
         </button>
     );

@@ -22,7 +22,7 @@ export default function Comment({children, userImg, userName, reviewScore, index
     return (
         <article className='comment-container' style={{backgroundColor: bgColor}}>
             <img src={userImg} alt={userName} />
-            <div>
+            <div className='card-info'>
                 <h3 className='card-title'> {userName}</h3>
                 <p className='card-text'> {children} </p>
             </div>

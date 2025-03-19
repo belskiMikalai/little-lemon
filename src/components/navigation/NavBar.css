@@ -2,8 +2,7 @@
 .nav-bar {
     height: 100%;
     margin: 0;
-    padding: 0 40px;
-
+    padding: 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -16,7 +15,8 @@
     text-decoration: none;
     white-space: nowrap;
     color: black;
-    margin: 0 5px;
 }
-
+.nav-bar a:hover {
+    text-decoration: underline black 2.5px ;
+}
 

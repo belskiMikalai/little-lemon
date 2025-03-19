@@ -1,20 +1,20 @@
 import './Card.css';
-export default function Card(props) {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTruck } from "@fortawesome/free-solid-svg-icons";
+export default function Card({children, name, price, img}) {
     return (
         <article className='card'>
-            <div>
-            </div>
-            <div>
-                <div>
-                    <h1 className='card-title'>{props.cardName}</h1>
-                    <p className='highlight'>{props.price}</p>
+            <img src={img} alt={name}/>
+            <div className='card-main'>
+                <div className='card-header'>
+                    <h1 className='card-title'>{name}</h1>
+                    <p className='highlight'>{price}</p>
                 </div>
-                <div>
-                    <p className='card-text'>{ props.children }</p>
-                </div>
-                <div>
-                    <a href='#' className='bold'>{ props.buy }</a>
-                </div>
+                <p className='card-text'>{children}</p>
+                <a href='#' className='bold order-button'>
+                    <span>Order a delivery</span>
+                    <FontAwesomeIcon icon={faTruck} />
+                </a>
             </div>
         </article>
     );
