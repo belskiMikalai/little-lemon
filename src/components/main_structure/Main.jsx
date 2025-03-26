@@ -3,10 +3,10 @@ import Section from '../secondary/Section.jsx';
 import Button from '../functional_elem/Button.jsx';
 import Card from '../secondary/Card.jsx';
 import Comment from '../secondary/Comment.jsx';
+import { Link } from 'react-router';
 import { heroImg, logoStyled, reviews, about, about2, productInfo } from '../../data.jsx';
 
 export default function Main() {
-  //const aboutColor = 'linear-gradient(to bottom, var(--primary-color1) 26%, white 26%)';
   return (
     <main>
       <Section backgroundcolor="var(--primary-color1)" className='hero'>
@@ -16,7 +16,7 @@ export default function Main() {
         </div>
         <p className='lead'> We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
         <div className='reserve'>
-          <Button type="primary">Reserve a table</Button>
+          <Link to='/reservation' className="primary bold">Reserve a table</Link>
         </div>
         <div className='image-container'>
           {

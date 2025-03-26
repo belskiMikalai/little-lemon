@@ -1,5 +1,6 @@
 import './NavBar.css'
 import { links } from '../../data.jsx';
+import { NavLink } from 'react-router';
 export default function NavBar() {
   return (
     <nav>
@@ -8,7 +9,14 @@ export default function NavBar() {
           links.map(({id, label, href}) => {
             return (
               <li key={id}>
-                  <a href={href}>{label}</a>
+                <NavLink
+                  to={href}
+                  className={({ isActive }) =>
+                    isActive ? "active" : ""
+                  }
+                >
+                  {label}
+                </NavLink>
               </li>
             );
           })

@@ -21,7 +21,7 @@ const links = [
   {
     id: 0,
     label: 'Home',
-    href: '#',
+    href: '/',
   },
   {
     id: 1,
@@ -36,7 +36,7 @@ const links = [
   {
     id: 3,
     label: 'Reservation',
-    href: '#',
+    href: '/Reservation',
   },
   {
     id: 4,
@@ -81,21 +81,21 @@ const heroImg = [
     id: 0,
     userName: 'Ishaq Hubbard',
     src: review1,
-    text: 'Paragraph text regular 16pt 1.5 line height Max 65 characters per line...',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit....',
     score: 5,
   },
   {
     id: 1,
     userName: 'Hector Mcpherson',
     src: review2,
-    text: 'Paragraph text regular 16pt 1.5 line height Max 65 characters per line...',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit....',
     score: 4,
   },
   {
     id: 2,
     userName: 'Madeleine Hammond',
     src: review3,
-    text: 'Paragraph text regular 16pt 1.5 line height Max 65 characters per line...',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit....',
     score: 5,
   }
 ];

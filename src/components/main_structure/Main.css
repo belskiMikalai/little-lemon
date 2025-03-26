@@ -21,6 +21,9 @@ main {
 .hero .lead {
     color: var(--highlight1)
 }
+.hero .bold {
+    padding-inline: 40px;
+}
 .hero .image-container  img{
     display: none;
 }
