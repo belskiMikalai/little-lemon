@@ -10,7 +10,7 @@ import Reservation from './components/reservation/Reservation.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter basename='/little-lemon'>
+    <HashRouter>
       <Routes>
         <Route element={ <App /> }>
           <Route path='/' element={ <Main/> } />
